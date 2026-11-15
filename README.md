@@ -1,11 +1,20 @@
 # Proyek Analisis Data: Bike Sharing Dashboard 🚲
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bdjjf9ei6qsasnz6axc2q9.streamlit.app/)
+
 Analisis data penyewaan sepeda Capital Bikeshare (Washington D.C., 2011 sampai 2012) untuk menjawab dua pertanyaan bisnis:
 
 1. Berapa persen penurunan rata-rata penyewaan harian saat cuaca berkabut/berawan dan hujan/salju ringan dibanding hari cerah sepanjang 2012?
 2. Pada jam berapa penyewaan memuncak di hari kerja dibanding hari libur/akhir pekan 2012, dan berapa porsi pengguna terdaftar di masing-masing jenis hari?
 
 Analisis lengkap ada di `notebook.ipynb`. Hasilnya disajikan dalam dashboard Streamlit di folder `dashboard/`.
+
+## Temuan Utama (2012)
+
+- Dibanding hari cerah (rata-rata 6.004 sepeda/hari), hari berkabut/berawan turun 16,9% dan hari hujan/salju ringan turun 64,6%. Hari hujan hanya 6 kali, jadi angka ini dibaca sebagai arah.
+- Hari kerja memuncak pukul 08.00 (605/jam) dan 17.00 (656/jam); hari libur/akhir pekan landai dengan puncak 13.00 (459/jam).
+- Pengguna terdaftar menyumbang 87,1% penyewaan di hari kerja, tapi hanya 69,4% di hari libur.
+- Analisis lanjutan (binning suhu): hari 20 sampai 30°C paling ramai (6.794/hari), tiga kali hari di bawah 10°C.
 
 ## Dashboard Online
 
@@ -14,7 +23,9 @@ https://bdjjf9ei6qsasnz6axc2q9.streamlit.app/
 ## Struktur Folder
 
 ```
-submission
+.
+├── .streamlit
+│   └── config.toml
 ├── dashboard
 │   ├── dashboard.py
 │   └── main_data.csv
