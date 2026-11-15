@@ -7,6 +7,10 @@ Analisis data penyewaan sepeda Capital Bikeshare (Washington D.C., 2011 sampai 2
 
 Analisis lengkap ada di `notebook.ipynb`. Hasilnya disajikan dalam dashboard Streamlit di folder `dashboard/`.
 
+## Dashboard Online
+
+https://bdjjf9ei6qsasnz6axc2q9.streamlit.app/
+
 ## Struktur Folder
 
 ```
@@ -20,7 +24,8 @@ submission
 │   └── Readme.txt
 ├── notebook.ipynb
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── url.txt
 ```
 
 ## Setup Environment - Anaconda
